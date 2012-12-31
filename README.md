@@ -3,13 +3,13 @@
 
 Want to parse some XML, but don't want to implement `NSXMLParserDelegate`? PRHXMLParser does that for you, so you simply write code like this:
 
-	[parser setElementHandlerForElementPath:@"/rectlist" handler:^(NSXMLElement *element, NSDictionary *attributesDict) {
+	[parser setElementHandlerForElementPath:@"/rectlist" handler:^(NSXMLElement *element, NSDictionary *attributes) {
 		<#…#>
 	}];
-	[parser setElementHandlerForElementPath:@"/rectlist/rectlist" handler:^(NSXMLElement *element, NSDictionary *attributesDict) {
+	[parser setElementHandlerForElementPath:@"/rectlist/rectlist" handler:^(NSXMLElement *element, NSDictionary *attributes) {
 		<#…#>
 	}];
-	[parser setElementHandlerForElementName:@"rect" handler:^(NSXMLElement *element, NSDictionary *attributesDict) {
+	[parser setElementHandlerForElementName:@"rect" handler:^(NSXMLElement *element, NSDictionary *attributes) {
 		<#…#>
 	}];
 	
