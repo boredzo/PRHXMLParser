@@ -1,11 +1,11 @@
 <rectlist id="fourthree">
-    <rect>0 0 640 480</rect>
-    <rect>0 0 320 240</rect>
-    <rect>0 0 320 200</rect>
-    <rect>0 0 640 400</rect>
     <rectlist id="widescreens">
         <!--This rectlist will be ignored-->
         <rect>0 0 1280 720</rect>
         <rect>0 0 1920 1080</rect>
     </rectlist>
+    <rect>0 0 640 480</rect>
+    <rect>0 0 320 240</rect>
+    <rect>0 0 320 200</rect>
+    <rect>0 0 640 400</rect>
 </rectlist>
