@@ -8,6 +8,11 @@ int main(void) {
 		) {
 			NSLog(@"Found rect list with attributes: %@", attributesDict);
 		}];
+		[parser setElementHandlerForElementPath:@"/rectlist/rectlist" handler:^(NSXMLElement *element,
+			NSDictionary *attributesDict
+		) {
+			NSLog(@"Found second-level rect list with attributes: %@", attributesDict);
+		}];
 		[parser setElementHandlerForElementName:@"rect" handler:^(NSXMLElement *element, NSDictionary *attributesDict) {
 			NSLog(@"Found rect with contents: %@", element.stringValue);
 		}];
