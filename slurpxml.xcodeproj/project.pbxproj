@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3152C97A169234B700C0F610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3152C979169234B700C0F610 /* Foundation.framework */; };
 		3152C97D169234B700C0F610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152C97C169234B700C0F610 /* main.m */; };
+		31F92E8C1692362A00FFAE1A /* PRHXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F92E8B1692362A00FFAE1A /* PRHXMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		3152C979169234B700C0F610 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3152C97C169234B700C0F610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3152C97F169234B700C0F610 /* slurpxml-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "slurpxml-Prefix.pch"; sourceTree = "<group>"; };
+		31F92E8A1692362A00FFAE1A /* PRHXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHXMLParser.h; sourceTree = "<group>"; };
+		31F92E8B1692362A00FFAE1A /* PRHXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHXMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,8 @@
 		3152C96A169234B700C0F610 = {
 			isa = PBXGroup;
 			children = (
+				31F92E8A1692362A00FFAE1A /* PRHXMLParser.h */,
+				31F92E8B1692362A00FFAE1A /* PRHXMLParser.m */,
 				3152C97B169234B700C0F610 /* slurpxml */,
 				3152C978169234B700C0F610 /* Frameworks */,
 				3152C976169234B700C0F610 /* Products */,
@@ -136,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3152C97D169234B700C0F610 /* main.m in Sources */,
+				31F92E8C1692362A00FFAE1A /* PRHXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,7 @@
 				3152C986169234B700C0F610 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
