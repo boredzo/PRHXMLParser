@@ -3,7 +3,7 @@
 int main(void) {
 	@autoreleasepool {
 		PRHXMLParser *parser = [[PRHXMLParser alloc] init];
-		[parser setElementHandlerForElementPath:@"rectlist" handler:^(NSXMLElement *element,
+		[parser setElementHandlerForElementPath:@"/rectlist" handler:^(NSXMLElement *element,
 			NSDictionary *attributesDict
 		) {
 			NSLog(@"Found rect list with attributes: %@", attributesDict);

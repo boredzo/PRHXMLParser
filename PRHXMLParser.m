@@ -38,12 +38,13 @@
 }
 
 - (NSString *)currentElementPath {
-	return [elementNamesStack componentsJoinedByString:@"/"];
+	return [@"/" stringByAppendingPathComponent:[elementNamesStack componentsJoinedByString:@"/"]];
 }
 - (PRHXMLElementHandler) elementHandlerForElementPath:(NSString *)elementPath {
 	return [elementHandlersByPath objectForKey:elementPath];
 }
 - (void) setElementHandlerForElementPath:(NSString *)elementPath handler:(PRHXMLElementHandler)handler {
+	NSParameterAssert([elementPath hasPrefix:@"/"]);
 	[elementHandlersByPath setObject:handler forKey:elementPath];
 }
 
