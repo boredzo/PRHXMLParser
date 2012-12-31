@@ -8,7 +8,7 @@
 
 typedef void (^PRHXMLElementHandler)(NSXMLElement *element, NSDictionary *attributesDict);
 
-//Element paths follow a very simple subset of XPath, namely slash-separated element names.
+//Element paths follow a very simple subset of XPath, namely slash-separated element names. All paths are absolute.
 
 @interface PRHXMLParser : NSObject
 
